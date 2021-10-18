@@ -1,8 +1,12 @@
-#**RegExp Tester**
+<p align="center">
+**RegExp Tester**
+</p>
 
-![Image](https://i.ibb.co/mFzSf5L/icon.png)
+<p align="center">
+  <img width="180" height="180" src="https://i.ibb.co/NnY7c28/icon.png">
+</p>
 
-###_A RegExp tester built with Flutter and Dart._
+_A RegExp tester built with Flutter and Dart._
 
 Hosted version at GitHub Pages
 
