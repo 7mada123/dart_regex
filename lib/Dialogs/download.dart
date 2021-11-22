@@ -40,7 +40,7 @@ class DownloadDialog extends StatelessWidget {
 
   static const osLink = {
     'Windows':
-        'https://drive.google.com/file/d/1brSpZw5Cq0BB2S626mpOmqqMlOLTH1_4/view?usp=sharing',
+        'https://drive.google.com/file/d/1U7AsBiKy4qce-24ma6wfceuTB8Qwkf4m/view?usp=sharing',
     // 'Linux': 'link',
     // 'Mac': 'link',
     // 'IOS': 'link',
