@@ -8,8 +8,8 @@ class RegexTextController extends TextEditingController {
 
   RegexTextController({
     final String? text,
-    required final this.regPattern,
-    required final this.paintColor,
+    required this.regPattern,
+    required this.paintColor,
   }) : super(text: text) {
     textStyle = TextStyle(
       background: Paint()
@@ -20,9 +20,9 @@ class RegexTextController extends TextEditingController {
 
   RegexTextController.fromValue(
     final TextEditingValue value, {
-    required final this.regPattern,
-    required final this.textStyle,
-    required final this.paintColor,
+    required this.regPattern,
+    required this.textStyle,
+    required this.paintColor,
   }) : super.fromValue(value);
 
   @override

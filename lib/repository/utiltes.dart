@@ -4,9 +4,9 @@ class RegexMatchInfo {
   final bool hasError;
 
   const RegexMatchInfo({
-    required final this.matcheCount,
-    required final this.matchTime,
-    required final this.hasError,
+    required this.matcheCount,
+    required this.matchTime,
+    required this.hasError,
   });
 
   RegexMatchInfo copyWithNoError() {
@@ -42,7 +42,7 @@ extension RegExpMethod on RegExp {
 
   List<bool> getBoolValues() {
     return List.from(
-      [this.isCaseSensitive, this.isDotAll, this.isMultiLine, this.isUnicode],
+      [isCaseSensitive, isDotAll, isMultiLine, isUnicode],
       growable: false,
     );
   }

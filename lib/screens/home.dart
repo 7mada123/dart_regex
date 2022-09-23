@@ -6,10 +6,10 @@ import '../repository/regex_text_controller.dart';
 import '../repository/utiltes.dart';
 
 class Home extends StatefulWidget {
-  const Home();
+  const Home() : super(key: const Key('Home'));
 
   @override
-  _HomeState createState() => _HomeState();
+  State createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
@@ -47,8 +47,9 @@ class _HomeState extends State<Home> {
     final matcheCount = regPattern.allMatches(bodyText).length;
 
     if (matcheCount == regexMatchInfo.value.matcheCount) {
-      if (regexMatchInfo.value.hasError)
+      if (regexMatchInfo.value.hasError) {
         regexMatchInfo.value = regexMatchInfo.value.copyWithNoError();
+      }
 
       stopwatch.stop();
       return;
@@ -189,6 +190,7 @@ class _HomeState extends State<Home> {
                       ClipboardData(text: regPattern.pattern),
                     );
 
+                    // ignore: use_build_context_synchronously
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         behavior: SnackBarBehavior.floating,

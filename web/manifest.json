@@ -1,11 +1,11 @@
 {
-    "name": "DART REGULAR EXPRESSION",
-    "short_name": "DART REGULAR EXPRESSION",
+    "name": "dart_regex",
+    "short_name": "dart_regex",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Flutter and Dart regular expression tester.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

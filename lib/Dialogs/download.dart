@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
+import 'package:url_launcher/url_launcher.dart';
 
 class DownloadDialog extends StatelessWidget {
-  const DownloadDialog();
+  const DownloadDialog() : super(key: const Key("DownloadDialog"));
 
   @override
   Widget build(final context) {
@@ -19,12 +19,7 @@ class DownloadDialog extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: ElevatedButton(
-                  onPressed: () {
-                    js.context.callMethod(
-                      'open',
-                      [os.value],
-                    );
-                  },
+                  onPressed: () => launchUrl(Uri.parse(os.value)),
                   child: Text(os.key),
                 ),
               ),
@@ -50,7 +45,7 @@ class DownloadDialog extends StatelessWidget {
 }
 
 class DownloadButton extends StatelessWidget {
-  const DownloadButton();
+  const DownloadButton() : super(key: const Key('DownloadButton'));
 
   @override
   Widget build(final context) {

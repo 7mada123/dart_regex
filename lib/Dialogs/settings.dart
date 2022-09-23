@@ -7,12 +7,12 @@ class SettingsDialog extends StatefulWidget {
   final void Function(RegExp newRegx) onSwitch;
 
   const SettingsDialog({
-    required final this.regx,
-    required final this.onSwitch,
-  });
+    required this.regx,
+    required this.onSwitch,
+  }) : super(key: const Key('SettingsDialog'));
 
   @override
-  _SettingsDialogState createState() => _SettingsDialogState();
+  State createState() => _SettingsDialogState();
 }
 
 class _SettingsDialogState extends State<SettingsDialog> {
@@ -142,9 +142,9 @@ this mode.
 
 class ExplainDialog extends StatelessWidget {
   const ExplainDialog({
-    required final this.shape,
-    required final this.explain,
-  });
+    required this.shape,
+    required this.explain,
+  }) : super(key: const Key('ExplainDialog'));
 
   final RoundedRectangleBorder shape;
   final String explain;
